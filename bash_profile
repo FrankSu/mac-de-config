@@ -10,13 +10,12 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export PS1="\[\033[2;31m\]\u \[\033[2;36m\]at \[\033[2;33m\]\h \[\033[2;36m\]in \[\033[2;32m\]\w \n \[\033[2;37m\]\$ "
 
-# nginx command alias 
-export _nginx_="/usr/local/nginx/sbin/nginx"
-alias nginx="sudo $_nginx_"
-alias nginx_stop="sudo $_nginx_ -s stop"
-alias nginx_reopen="sudo $_nginx_ -s reopen"
-alias nginx_reload="sudo $_nginx_ -s reload"
-alias nginx_quit="sudo $_nginx_ -s quit"
+# Nginx - install nginx via homebrew
+export NGINX = "/usr/local/Cellar/nginx/1.6.2/bin/nginx"
+alias nginx="sudo $NGINX"
+alias nginx_stop="sudo $NGINX -s stop"
+alias nginx_reload="sudo $NGINX -s reload"
+alias nginx_quit="sudo $NGINX -s quit"
 
 # Grunt auto copmlete
 eval "$(grunt --completion=bash)"
