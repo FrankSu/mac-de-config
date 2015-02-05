@@ -6,7 +6,9 @@ alias go="sudo shutdown -h now"
 alias linode="ssh root@74.207.241.157"
 
 # 修改提示符
-export PS1="\[\033[2;31;40m\]\u \[\033[2;36;40m\]at \[\033[2;33;40m\]\h \[\033[2;36;40m\]in \[\033[2;32;40m\]\w \n \[\033[2;37;40m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export PS1="\[\033[2;31m\]\u \[\033[2;36m\]at \[\033[2;33m\]\h \[\033[2;36m\]in \[\033[2;32m\]\w \n \[\033[2;37m\]\$ "
 
 # nginx command alias 
 export _nginx_="/usr/local/nginx/sbin/nginx"
